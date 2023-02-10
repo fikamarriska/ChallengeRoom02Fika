@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PeminjamActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="380dp"
+            android:layout_height="545dp"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="380dp"
+                android:layout_height="545dp"
+                android:layout_marginTop="0dp">
+
+                <EditText
+                    android:id="@+id/ETidbukuPinjam"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:hint="Id buku pinjam"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/ETnamaPeminjam"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:ems="10"
+                    android:hint="namaPeminjam"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ETidbukuPinjam"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/ETjudulPinjam"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:ems="10"
+                    android:hint="judulPinjam"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ETnamaPeminjam"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/ETtanggalPinjam"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:ems="10"
+                    android:hint="tanggalPinjam"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ETjudulPinjam"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/ETtanggalPembalian"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:ems="10"
+                    android:hint="tanggalPembalian"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ETtanggalPinjam"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/ETjumlahbuku"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="51dp"
+                    android:ems="10"
+                    android:hint="jumlah buku"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ETtanggalPembalian"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_simpanPinjam"
+            android:layout_width="95dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#2196F3"
+            android:text="Save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.953"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_updatePinjam"
+            android:layout_width="95dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#2196F3"
+            android:text="Update"
+            app:layout_constraintEnd_toStartOf="@+id/btn_simpanPinjam"
+            app:layout_constraintHorizontal_bias="0.921"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
